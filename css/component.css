@@ -1,0 +1,519 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ynmbqi');
+  src:  url('../fonts/icomoon.eot?ynmbqi#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ynmbqi') format('truetype'),
+    url('../fonts/icomoon.woff?ynmbqi') format('woff'),
+    url('../fonts/icomoon.svg?ynmbqi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-bullhorn:before {
+  content: "\e91a";
+}
+.icon-bubbles2:before {
+  content: "\e96d";
+}
+.icon-bubble2:before {
+  content: "\e96e";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-mail2:before {
+  content: "\ea84";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-facebook:before, 
+.icon-twitter:before,
+.icon-instagram:before,
+.icon-mail2:before,
+.icon-bubble2:before {
+	font-family: 'icomoon';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 2;
+	text-align: center;
+	color: #3382be;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 8000px;
+	padding-left: 8px;
+}
+
+/* Needed for a fluid height: */
+html, body, .container, .main { height: 100%;}
+
+/* header */
+#headerLogo {
+	width: 13%;
+}
+
+nav {
+	display: inline;
+}
+
+#topText {
+	padding: 0 10%;
+}
+
+/* main wrapper */
+.cbp-contentslider {
+	width: 100%;
+	height: 100%;
+	margin: 1em auto;
+	position: relative;
+	border: 4px solid #3382be
+}
+
+.cbp-contentslider > ul {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.cbp-contentslider > ul li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 1em;
+	background: #fff;
+}
+
+/* Whithout JS, we use :target */
+.cbp-contentslider > ul li:target {
+	z-index: 100;
+}
+
+.cbp-contentslider nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 3.313em;
+	z-index: 1000;
+	border-top: 4px solid #3382be;
+	overflow: hidden;
+}
+
+.cbp-contentslider nav a {
+	float: left;
+	display: block;
+	width: 20%;
+	height: 100%;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	overflow: hidden;
+	color: #3382be;
+	background: #fff;
+	outline: none;
+	text-align: center;
+	line-height: 3;
+	position: relative;
+	padding-left: 3.125em;
+	text-transform: uppercase;
+	border-right: 4px solid #3382be;
+	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.cbp-contentslider nav a span {
+	display: block;
+}
+
+.cbp-contentslider nav a:last-child {
+	border: none;
+	box-shadow: 1px 0 #3382be; /* fills gap caused by rounding */
+}
+
+.cbp-contentslider nav a:hover {
+	background-color: #3382be;
+	color: #fff;
+	text-decoration: none;
+}
+
+.cbp-contentslider nav a.rc-active {
+	background-color: #3382be;
+	color: #fff;
+}
+
+/* Iconfont for navigation and headings */
+.cbp-contentslider [class^="icon-"]:before, 
+.cbp-contentslider [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	text-align: center;
+	speak: none;
+	font-weight: normal;
+	line-height: 2.5;
+	font-size: 1.5em;
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	margin: -1.250em 0 0 0;
+	height: 2.500em;
+	width: 2.500em;
+	color: rgba(0,0,0,0.1);
+	-webkit-font-smoothing: antialiased;
+}
+
+.cbp-contentslider [class^="icon-"].rc-active:before, 
+.cbp-contentslider [class*=" icon-"].rc-active:before,
+.cbp-contentslider nav a:hover:before {
+	color: rgba(255,255,255,0.9);
+}
+
+.cbp-contentslider h3 {
+	font-size: 2em;
+	height: 2em;
+	line-height: 1.7;
+	font-weight: 300;
+	margin: 0 0 0.3em;
+	position: relative;
+	color: #3382be;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 0.3em;
+	padding: 0 0.2em 0 0;
+	border-bottom: 4px solid #3382be;
+}
+
+.cbp-contentslider h3[class^="icon-"]:before, 
+.cbp-contentslider h3[class*=" icon-"]:before {
+	top: 0;
+	left: 0;
+	width: 2em;
+	line-height: 1;
+	height: 1.0em;
+	margin: 0;
+	color: #3382be;
+}
+
+.cbp-contentslider li > div {
+	position: absolute;
+	top: 5em;
+	bottom: 3.313em;
+	width: 100%;
+	left: 0;
+	padding: 0 1em;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.cbp-contentslider .cbp-content {
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	-o-column-count: 2;
+	column-count: 1;
+	-webkit-column-gap: 1em;
+	-moz-column-gap: 1em;
+	-o-column-gap: 1em;
+	column-gap: 1em;
+	vertical-align: top;	
+	padding: 1em 0;
+}
+
+.cbp-contentslider p {
+	color: #000;
+	padding: 0 0.5em 0.4em;
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+.cbp-content p {
+	text-align: center;
+}
+
+.sliderContainer h2, .sliderContainer p {
+	text-align: center;
+}
+
+.header {
+	flex: 1;
+	text-align: center;
+}
+
+.iconContainer {
+	display: flex;
+}
+
+.iconContainer a {
+	display: flex;
+}
+
+#PMPMLogo {
+	margin: 4% auto;
+	width: 40%;
+	height: 40%;
+}
+
+.infoContainer {
+	flex: 2;
+	display: flex;
+}
+
+.information {
+	padding: 0 20%;
+}
+
+.information p {
+	text-align: left;
+}
+
+.fixed-size {
+	flex: 1;
+	padding: 0 5%;
+}
+
+#nineReasons {
+	margin: 0 auto;
+	width: 30%;
+	height: 30%;
+}
+
+#donateButtonArea {
+	height: 7em;
+	width: 100%;
+	display: flex;
+}
+
+#donateButton {
+	margin: auto;
+	background-color: #3382be;
+	width: 280px;
+	height: 60px;
+	display: flex;
+	border-radius: 20px;
+}
+
+#donateButton a {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex: 1;
+}
+
+#donateButton a:hover {
+	text-decoration: none;
+}
+
+#donateButton:hover {
+	background-color: #31372D;
+}
+
+#donateButton p {
+	margin: auto;
+	padding: 0;
+	font-weight: 600;
+	color: #fff;
+	font-size: 2.0em
+}
+
+/* Media queries */
+
+@media screen and (max-width: 70em) { 
+	.cbp-contentslider p {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 67.75em) {
+	p, .cbp-contentslider p {
+		font-size: 1.0rem;
+	}
+
+	h2 {
+		font-size: 1.3rem;
+	}
+
+	#topText {
+    padding: 0 10%;
+	}
+
+	.cbp-contentslider nav a[class^="icon-"]:before, 
+	.cbp-contentslider nav a[class*=" icon-"]:before {
+		left: 50%;
+		margin-left: -1.250em;
+	}
+
+	.cbp-contentslider nav a span {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 43em) {
+	p, .cbp-contentslider p {
+		font-size: 1.2rem;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#headerLogo {
+		width: 20%;
+		flex: 1;
+		margin: 0 auto 5% auto;
+	}
+
+	.container > header nav {
+		float: none;
+	}
+
+	nav {
+		flex: 1;
+		margin: auto;
+		display: block;
+	}
+
+	#topText {
+		padding: 0 7%;
+	}
+
+	.cbp-contentslider {
+		height: 100%;
+	}
+
+	.cbp-contentslider p {
+		text-align: left;
+	}
+
+	.fixed-size {
+		padding: 0;
+	}
+
+	.infoContainer {
+		flex-wrap: wrap;
+	}
+
+	.information .header {
+		text-align: left;
+	}
+
+	.information {
+		padding: 0;
+	}
+
+	.cbp-contentslider h3 {
+		font-size: 2em;
+	}
+
+	.cbp-contentslider .cbp-content {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		-o-column-count: 1;
+		column-count: 1;
+	}
+
+	.cbp-contentslider li > div {
+		top: 5em;
+	}
+
+	#PMPMLogo {
+		width: 90%;
+		max-width: 40vw;
+	}
+
+	#nineReasons {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 25em) { 
+	p, .cbp-contentslider p {
+		font-size: 1.2rem;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#headerLogo {
+		width: 40%;
+		flex: 1;
+		margin: 0 auto 10% auto;
+	}
+
+	.container > header nav {
+		float: none;
+	}
+
+	.container > header nav a:nth-child(1):after {
+		right: -100px;
+	}
+
+	nav {
+		flex: 1;
+		margin: auto;
+		display: block;
+	}
+
+	#topText {
+		padding: 0 7%;
+	}
+
+	.cbp-contentslider {
+		height: 100%;
+	}
+
+	.cbp-contentslider p {
+		text-align: left;
+	}
+
+	.fixed-size {
+		padding: 0;
+	}
+
+	.infoContainer {
+		flex-wrap: wrap;
+	}
+
+	.information .header {
+		text-align: left;
+	}
+
+	.information {
+		padding: 0;
+	}
+
+	.cbp-contentslider nav a { padding: 0;}
+	.cbp-contentslider h3[class^="icon-"]:before, 
+	.cbp-contentslider h3[class*=" icon-"]:before { display: none;}
+
+	#PMPMLogo {
+		width: 90%;
+	}
+
+	#nineReasons {
+		width: 100%;
+	}
+}
